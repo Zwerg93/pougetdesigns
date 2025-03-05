@@ -1,0 +1,43 @@
+# Node modules
+        node_modules/
+        
+        # Alles unter ./src/app/components/
+        # /src/app/components/
+        
+        # Betriebssystem-spezifische Dateien
+        .DS_Store
+        Thumbs.db
+        
+        # Log-Dateien
+        npm-debug.log*
+        yarn-debug.log*
+        yarn-error.log*
+        
+        # Umgebungskonfigurationsdateien
+        .env
+        .env.local
+        .env.*.local
+        
+        # Abhängigkeiten für den Paketmanager
+        package-lock.json
+        yarn.lock
+        
+        # Build-Ordner
+        dist/
+        build/
+        
+        # IDE-/Editor-spezifische Dateien
+        .vscode/
+        .idea/
+        *.iml
+        
+        # Temporäre Dateien
+        *.tmp
+        *.swp
+        *.bak
+        *.log
+        *.out
+        
+        # Sonstige Dateien
+        coverage/
+        
