@@ -1,0 +1,20 @@
+# Marcel Pouget Designs
+
+Marcel Pouget is a designer and photographer based in Austria, offering custom print design, web design, and professional photography.
+
+## Core Navigation
+- [Home](https://pougetdesigns.com/)
+- [Leistungen](https://pougetdesigns.com/leistungen)
+- [Portfolio](https://pougetdesigns.com/portfolio)
+- [Über Mich](https://pougetdesigns.com/about)
+- [Kontakt](https://pougetdesigns.com/kontakt)
+
+## Case Studies
+- [Askalaps IoT](https://pougetdesigns.com/portfolio/askalaps-iot)
+- [Smart EV-Charging System](https://pougetdesigns.com/portfolio/diplomarbeit-lademanager)
+- [Harfenbau Reschenhofer](https://pougetdesigns.com/portfolio/harfenbau-reschenhofer)
+- [Makani Bowls](https://pougetdesigns.com/portfolio/makani-bowls)
+
+## Legal
+- [Impressum](https://pougetdesigns.com/impressum)
+- [Datenschutz](https://pougetdesigns.com/datenschutz)
