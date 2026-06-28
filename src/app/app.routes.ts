@@ -7,7 +7,7 @@ export const routes: Routes = [
     data: {
       seo: {
         title: 'Web- & Printdesign, Fotografie',
-        description: 'Individuelle Designkonzepte aus Österreich. Ich gestalte hochwertige Printmedien (Speisekarten, Magazine) sowie moderne Webauftritte und fotografiere für Sie vor Ort.'
+        description: 'Individuelle Designkonzepte aus Österreich: Ich gestalte hochwertige Printmedien (Speisekarten, Magazine), moderne Webauftritte und fotografiere vor Ort.'
       }
     }
   },
