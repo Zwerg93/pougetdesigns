@@ -108,14 +108,30 @@
                   <h3 class="text-2xl font-black text-brand-primary dark:text-white">Screenshots der Weboberfläche (Klicken für Vollbild)</h3>
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="space-y-2">
-                      <div (click)="openLightbox('Askalaps/dashboard.png')" class="relative aspect-[9/16] max-h-[350px] bg-gray-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-white/5 cursor-zoom-in hover:scale-[1.01] transition-transform duration-200">
-                        <img ngSrc="Askalaps/dashboard.png" fill alt="Askalaps Dashboard Mobile" class="object-contain" sizes="(max-width: 768px) 100vw, 33vw">
+                      <div (click)="openLightbox('Askalaps/dashboard.png')" class="relative bg-slate-900 rounded-2xl overflow-hidden border border-gray-150 dark:border-white/5 cursor-zoom-in hover:scale-[1.01] transition-transform duration-200 shadow-md">
+                        <!-- Browser Window Header Bar -->
+                        <div class="h-6 bg-slate-100 dark:bg-slate-800/80 border-b border-gray-150 dark:border-white/5 flex items-center gap-1.5 px-4">
+                          <span class="w-2 h-2 rounded-full bg-red-400"></span>
+                          <span class="w-2 h-2 rounded-full bg-yellow-400"></span>
+                          <span class="w-2 h-2 rounded-full bg-green-400"></span>
+                        </div>
+                        <div class="relative aspect-video w-full">
+                          <img ngSrc="Askalaps/dashboard.png" fill alt="Askalaps Dashboard Weboberfläche" class="object-cover" sizes="(max-width: 768px) 100vw, 33vw">
+                        </div>
                       </div>
                       <p class="text-xs text-center text-gray-400">Arbeitszeiten-Übersicht im Dashboard</p>
                     </div>
                     <div class="space-y-2">
-                      <div (click)="openLightbox('Askalaps/details.png')" class="relative aspect-[9/16] max-h-[350px] bg-gray-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-white/5 cursor-zoom-in hover:scale-[1.01] transition-transform duration-200">
-                        <img ngSrc="Askalaps/details.png" fill alt="Askalaps Detailsteuerung" class="object-contain" sizes="(max-width: 768px) 100vw, 33vw">
+                      <div (click)="openLightbox('Askalaps/details.png')" class="relative bg-slate-900 rounded-2xl overflow-hidden border border-gray-150 dark:border-white/5 cursor-zoom-in hover:scale-[1.01] transition-transform duration-200 shadow-md">
+                        <!-- Browser Window Header Bar -->
+                        <div class="h-6 bg-slate-100 dark:bg-slate-800/80 border-b border-gray-150 dark:border-white/5 flex items-center gap-1.5 px-4">
+                          <span class="w-2 h-2 rounded-full bg-red-400"></span>
+                          <span class="w-2 h-2 rounded-full bg-yellow-400"></span>
+                          <span class="w-2 h-2 rounded-full bg-green-400"></span>
+                        </div>
+                        <div class="relative aspect-video w-full">
+                          <img ngSrc="Askalaps/details.png" fill alt="Askalaps Detailsteuerung" class="object-cover" sizes="(max-width: 768px) 100vw, 33vw">
+                        </div>
                       </div>
                       <p class="text-xs text-center text-gray-400">Projektzuordnungen und Auswertungen</p>
                     </div>

@@ -13,43 +13,43 @@
     <!-- Portfolio Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       @for (project of projects(); track project.slug; let i = $index) {
-        <article class="group overflow-hidden card-neo shadow-sm">
-          <a [routerLink]="['/portfolio', project.slug]">
-            
-            <!-- Image (Optimized) -->
-            <div class="relative aspect-video w-full overflow-hidden bg-slate-100 dark:bg-slate-800">
-              <img 
-                [ngSrc]="project.imageUrl" 
-                fill 
-                [priority]="i === 0"
-                alt="Vorschau von {{ project.title }}" 
-                class="object-cover group-hover:scale-103 transition-transform duration-500"
-                sizes="(max-width: 768px) 100vw, 33vw">
-            </div>
+        <article class="group overflow-hidden card-neo shadow-sm relative">
+          
+          <!-- Image (Optimized) -->
+          <div class="relative aspect-video w-full overflow-hidden bg-slate-100 dark:bg-slate-800">
+            <img 
+              [ngSrc]="project.imageUrl" 
+              fill 
+              [priority]="i === 0"
+              alt="Vorschau von {{ project.title }}" 
+              title="Vorschau von {{ project.title }}" 
+              class="object-cover group-hover:scale-103 transition-transform duration-500"
+              sizes="(max-width: 768px) 100vw, 33vw">
+          </div>
 
-            <!-- Details -->
-            <div class="p-8 space-y-3">
-              <span class="inline-block text-xs font-bold text-brand-primary dark:text-brand-secondary uppercase tracking-wider">
-                {{ project.category }}
-              </span>
-              <h3 class="text-xl font-bold text-brand-text-head dark:text-white group-hover:text-brand-primary transition-colors duration-300">
+          <!-- Details -->
+          <div class="p-8 space-y-3">
+            <span class="inline-block text-xs font-bold text-brand-primary dark:text-brand-secondary uppercase tracking-wider">
+              {{ project.category }}
+            </span>
+            <h3 class="text-xl font-bold text-brand-text-head dark:text-white group-hover:text-brand-primary transition-colors duration-300">
+              <a [routerLink]="['/portfolio', project.slug]" class="after:absolute after:inset-0 focus:outline-none">
                 {{ project.title }}
-              </h3>
-              <p class="text-sm text-brand-text-body dark:text-gray-400 leading-relaxed line-clamp-3">
-                {{ project.description }}
-              </p>
-              
-              <!-- Technologies Tag Bar -->
-              <div class="flex flex-wrap gap-1.5 pt-2">
-                @for (tech of project.technologies; track tech) {
-                  <span class="px-2 py-1 bg-slate-50 dark:bg-white/5 text-brand-text-body dark:text-gray-400 text-[10px] font-bold rounded-lg border border-slate-100 dark:border-white/5">
-                    {{ tech }}
-                  </span>
-                }
-              </div>
+              </a>
+            </h3>
+            <p class="text-sm text-brand-text-body dark:text-gray-400 leading-relaxed line-clamp-3">
+              {{ project.description }}
+            </p>
+            
+            <!-- Technologies Tag Bar -->
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              @for (tech of project.technologies; track tech) {
+                <span class="px-2 py-1 bg-slate-50 dark:bg-white/5 text-brand-text-body dark:text-gray-400 text-[10px] font-bold rounded-lg border border-slate-100 dark:border-white/5">
+                  {{ tech }}
+                </span>
+              }
             </div>
-
-          </a>
+          </div>
         </article>
       }
     </div>
