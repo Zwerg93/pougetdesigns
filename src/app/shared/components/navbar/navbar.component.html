@@ -2,36 +2,36 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-20">
 
-      <!-- Brand Logo using favicon.png -->
+      <!-- Brand Logo using logo-small.png -->
       <div class="flex-shrink-0">
-        <a routerLink="/" class="flex items-center gap-2.5 text-lg sm:text-xl font-bold tracking-wider hover:text-brand-secondary transition-colors duration-300">
-          <img src="favicon.png" alt="Pouget Designs Logo" title="Pouget Designs Logo" class="w-8 h-8 rounded-lg shadow-md object-contain bg-white p-0.5">
+        <a routerLink="/" class="flex items-center gap-2.5 text-lg sm:text-xl font-bold tracking-wider hover:text-amber-200 transition-colors duration-300">
+          <img src="logo-small.png" alt="Pouget Designs Logo" title="Pouget Designs Logo" class="w-8 h-8 rounded-lg shadow-md object-contain bg-white p-0.5">
           POUGET DESIGNS
         </a>
       </div>
 
       <!-- Desktop Navigation Links -->
       <div class="hidden md:flex items-center space-x-8">
-        <a routerLink="/" routerLinkActive="text-brand-secondary after:w-full" [routerLinkActiveOptions]="{exact: true}"
-           class="relative py-2 hover:text-brand-secondary font-medium transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-brand-secondary after:transition-all after:duration-300">Home</a>
+        <a routerLink="/" routerLinkActive="text-amber-200 after:w-full" [routerLinkActiveOptions]="{exact: true}"
+           class="relative py-2 hover:text-amber-200 font-medium transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-brand-secondary after:transition-all after:duration-300">Home</a>
 
-        <a routerLink="/leistungen" routerLinkActive="text-brand-secondary after:w-full"
-           class="relative py-2 hover:text-brand-secondary font-medium transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-brand-secondary after:transition-all after:duration-300">Leistungen</a>
+        <a routerLink="/leistungen" routerLinkActive="text-amber-200 after:w-full"
+           class="relative py-2 hover:text-amber-200 font-medium transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-brand-secondary after:transition-all after:duration-300">Leistungen</a>
 
-        <a routerLink="/portfolio" routerLinkActive="text-brand-secondary after:w-full"
-           class="relative py-2 hover:text-brand-secondary font-medium transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-brand-secondary after:transition-all after:duration-300">Portfolio</a>
+        <a routerLink="/portfolio" routerLinkActive="text-amber-200 after:w-full"
+           class="relative py-2 hover:text-amber-200 font-medium transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-brand-secondary after:transition-all after:duration-300">Portfolio</a>
 
-        <a routerLink="/about" routerLinkActive="text-brand-secondary after:w-full"
-           class="relative py-2 hover:text-brand-secondary font-medium transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-brand-secondary after:transition-all after:duration-300">Über Mich</a>
+        <a routerLink="/about" routerLinkActive="text-amber-200 after:w-full"
+           class="relative py-2 hover:text-amber-200 font-medium transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-brand-secondary after:transition-all after:duration-300">Über Mich</a>
 
-        <a routerLink="/kontakt" routerLinkActive="text-brand-secondary after:w-full"
-           class="relative py-2 hover:text-brand-secondary font-medium transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-brand-secondary after:transition-all after:duration-300">Kontakt</a>
+        <a routerLink="/kontakt" routerLinkActive="text-amber-200 after:w-full"
+           class="relative py-2 hover:text-amber-200 font-medium transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-brand-secondary after:transition-all after:duration-300">Kontakt</a>
       </div>
 
       <!-- Desktop Action Area: Ruby-Mode Paw Toggler -->
       <div class="hidden md:flex items-center ml-4">
         <button (click)="rubyModeService.triggerRubyMode()" type="button"
-                class="p-2.5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-brand-secondary/30 transition-all duration-300 text-gray-200 hover:text-brand-secondary shadow-inner"
+                class="p-2.5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-brand-secondary/30 transition-all duration-300 text-gray-200 hover:text-amber-200 shadow-inner"
                 title="Ruby-Mode aktivieren (Katzenpfötchen)">
           <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 14c-1.66 0-3 1.34-3 3 0 2 2 3.5 3 3.5s3-1.5 3-3.5c0-1.66-1.34-3-3-3zm-4.5-4c-.83 0-1.5.67-1.5 1.5s1 2.5 1.5 2.5 1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm9 0c-.83 0-1.5.67-1.5 1.5 0 1 .5 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm-6.5-3c-.83 0-1.5.67-1.5 1.5 0 1 1 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm4 0c-.83 0-1.5.67-1.5 1.5 0 1 1 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5z"/>
@@ -43,7 +43,7 @@
       <div class="flex items-center gap-3 md:hidden">
         <!-- Ruby-Mode toggle for Mobile -->
         <button (click)="rubyModeService.triggerRubyMode()" type="button"
-                class="p-2 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 text-gray-200 hover:text-brand-secondary transition-colors"
+                class="p-2 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 text-gray-200 hover:text-amber-200 transition-colors"
                 title="Ruby-Mode">
           <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 14c-1.66 0-3 1.34-3 3 0 2 2 3.5 3 3.5s3-1.5 3-3.5c0-1.66-1.34-3-3-3zm-4.5-4c-.83 0-1.5.67-1.5 1.5s1 2.5 1.5 2.5 1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm9 0c-.83 0-1.5.67-1.5 1.5 0 1 .5 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm-6.5-3c-.83 0-1.5.67-1.5 1.5 0 1 1 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm4 0c-.83 0-1.5.67-1.5 1.5 0 1 1 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5z"/>
@@ -73,20 +73,20 @@
   @if (isOpen()) {
     <div class="md:hidden bg-brand-primary dark:bg-brand-dark border-t border-white/10 animate-fadeIn" id="mobile-menu">
       <div class="px-3 pt-3 pb-6 space-y-2">
-        <a routerLink="/" (click)="closeMenu()" routerLinkActive="text-brand-secondary bg-white/5" [routerLinkActiveOptions]="{exact: true}"
-           class="block px-4 py-3 rounded-xl text-base font-semibold hover:bg-white/5 hover:text-brand-secondary transition-all">Home</a>
+        <a routerLink="/" (click)="closeMenu()" routerLinkActive="text-amber-200 bg-white/5" [routerLinkActiveOptions]="{exact: true}"
+           class="block px-4 py-3 rounded-xl text-base font-semibold hover:bg-white/5 hover:text-amber-200 transition-all">Home</a>
 
-        <a routerLink="/leistungen" (click)="closeMenu()" routerLinkActive="text-brand-secondary bg-white/5"
-           class="block px-4 py-3 rounded-xl text-base font-semibold hover:bg-white/5 hover:text-brand-secondary transition-all">Leistungen</a>
+        <a routerLink="/leistungen" (click)="closeMenu()" routerLinkActive="text-amber-200 bg-white/5"
+           class="block px-4 py-3 rounded-xl text-base font-semibold hover:bg-white/5 hover:text-amber-200 transition-all">Leistungen</a>
 
-        <a routerLink="/portfolio" (click)="closeMenu()" routerLinkActive="text-brand-secondary bg-white/5"
-           class="block px-4 py-3 rounded-xl text-base font-semibold hover:bg-white/5 hover:text-brand-secondary transition-all">Portfolio</a>
+        <a routerLink="/portfolio" (click)="closeMenu()" routerLinkActive="text-amber-200 bg-white/5"
+           class="block px-4 py-3 rounded-xl text-base font-semibold hover:bg-white/5 hover:text-amber-200 transition-all">Portfolio</a>
 
-        <a routerLink="/about" (click)="closeMenu()" routerLinkActive="text-brand-secondary bg-white/5"
-           class="block px-4 py-3 rounded-xl text-base font-semibold hover:bg-white/5 hover:text-brand-secondary transition-all">Über Mich</a>
+        <a routerLink="/about" (click)="closeMenu()" routerLinkActive="text-amber-200 bg-white/5"
+           class="block px-4 py-3 rounded-xl text-base font-semibold hover:bg-white/5 hover:text-amber-200 transition-all">Über Mich</a>
 
-        <a routerLink="/kontakt" (click)="closeMenu()" routerLinkActive="text-brand-secondary bg-white/5"
-           class="block px-4 py-3 rounded-xl text-base font-semibold hover:bg-white/5 hover:text-brand-secondary transition-all">Kontakt</a>
+        <a routerLink="/kontakt" (click)="closeMenu()" routerLinkActive="text-amber-200 bg-white/5"
+           class="block px-4 py-3 rounded-xl text-base font-semibold hover:bg-white/5 hover:text-amber-200 transition-all">Kontakt</a>
       </div>
     </div>
   }
