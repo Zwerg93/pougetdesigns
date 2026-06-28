@@ -6,7 +6,7 @@ export const routes: Routes = [
     loadComponent: () => import('./features/home/home.component').then(m => m.HomeComponent),
     data: {
       seo: {
-        title: 'Web- & Printdesign, Fotografie',
+        title: 'Kreatives Webdesign, Printdesign & Fotografie',
         description: 'Individuelle Designkonzepte aus Österreich: Ich gestalte hochwertige Printmedien (Speisekarten, Magazine), moderne Webauftritte und fotografiere vor Ort.'
       }
     }
