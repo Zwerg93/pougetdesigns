@@ -1,0 +1,61 @@
+<footer class="bg-gray-100 dark:bg-brand-dark/98 text-gray-700 dark:text-gray-300 py-16 border-t border-gray-200 dark:border-white/5 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+      
+      <!-- Column 1: About Agency -->
+      <div class="md:col-span-2 space-y-4">
+        <div class="flex items-center gap-2.5 text-xl font-bold tracking-wider text-brand-primary dark:text-white">
+          <img src="favicon.png" alt="Pouget Designs Logo" class="w-8 h-8 rounded-lg shadow-md object-contain bg-white p-0.5">
+          POUGET DESIGNS
+        </div>
+        <p class="text-sm text-gray-500 dark:text-gray-400 max-w-sm leading-relaxed">
+          Individuelles Print- & Webdesign sowie professionelle Fotografie aus Österreich. Ganzheitliche Betreuung für Ihren perfekten Markenauftritt.
+        </p>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="space-y-4">
+        <h3 class="text-brand-primary dark:text-white text-sm font-bold tracking-wider uppercase">Navigation</h3>
+        <ul class="space-y-2.5 text-sm">
+          <li>
+            <a routerLink="/" class="hover:text-brand-secondary dark:hover:text-brand-secondary transition-colors duration-300">Startseite</a>
+          </li>
+          <li>
+            <a routerLink="/leistungen" class="hover:text-brand-secondary dark:hover:text-brand-secondary transition-colors duration-300">Leistungen</a>
+          </li>
+          <li>
+            <a routerLink="/portfolio" class="hover:text-brand-secondary dark:hover:text-brand-secondary transition-colors duration-300">Portfolio</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Legal & Resources -->
+      <div class="space-y-4">
+        <h3 class="text-brand-primary dark:text-white text-sm font-bold tracking-wider uppercase">Rechtliches</h3>
+        <ul class="space-y-2.5 text-sm">
+          <li>
+            <a routerLink="/impressum" class="hover:text-brand-secondary dark:hover:text-brand-secondary transition-colors duration-300 font-medium">Impressum</a>
+          </li>
+          <li>
+            <a routerLink="/datenschutz" class="hover:text-brand-secondary dark:hover:text-brand-secondary transition-colors duration-300">Datenschutzerklärung</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Copyright Bar -->
+    <div class="mt-12 pt-8 border-t border-gray-200 dark:border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500 dark:text-gray-400">
+      <div>
+        &copy; {{ currentYear }} Marcel Pouget Designs. Alle Rechte vorbehalten.
+      </div>
+      <div class="flex items-center gap-1.5">
+        <span>Handcrafted with</span>
+        <span class="text-red-500 animate-pulse">♥</span>
+        <span>and Angular 21</span>
+      </div>
+    </div>
+
+  </div>
+</footer>

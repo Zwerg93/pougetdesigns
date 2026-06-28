@@ -1,0 +1,48 @@
+<div class="min-h-[80vh] flex flex-col items-center justify-center px-4 py-16 text-center bg-brand-light dark:bg-brand-dark transition-colors duration-300">
+  <div class="max-w-md w-full space-y-8 card-neo p-8 md:p-12 shadow-md">
+    
+    <!-- Stylised Cat illustration playing with a cable -->
+    <div class="relative flex justify-center">
+      <div class="w-40 h-40 bg-brand-primary/10 rounded-full flex items-center justify-center text-brand-primary animate-bounce duration-1000">
+        <!-- Cute Cat / Cord Chew SVG Icon -->
+        <svg class="w-24 h-24" viewBox="0 0 24 24" fill="currentColor">
+          <!-- Cat Silhouette with sparks -->
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" class="opacity-10"/>
+          <!-- Cat body & tail -->
+          <path d="M19 12c-.55 0-1 .45-1 1v2.17l-3.29-3.29c-.39-.39-1.02-.39-1.41 0L12 13.09l-2.29-2.3c-.39-.39-1.02-.39-1.41 0L4.5 14.5c-.39.39-.39 1.02 0 1.41s1.02.39 1.41 0L8 13.83l2.29 2.3c.39.39 1.02.39 1.41 0L13 14.91l3.59 3.59c.39.39 1.02.39 1.41 0l1.5-1.5c.39-.39.39-1.02 0-1.41-.18-.19-.44-.3-.71-.3H19v-2.17c0-.55-.45-1-1-1z" class="text-brand-secondary"/>
+          <path d="M12 5.5c-1.38 0-2.5 1.12-2.5 2.5v1h5V8c0-1.38-1.12-2.5-2.5-2.5z" class="text-brand-primary"/>
+        </svg>
+      </div>
+      <!-- Sparkles around the wire -->
+      <span class="absolute top-4 right-12 flex h-3 w-3">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-secondary opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-secondary"></span>
+      </span>
+      <span class="absolute bottom-6 left-14 flex h-4 w-4">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-primary opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-4 w-4 bg-brand-primary"></span>
+      </span>
+    </div>
+
+    <!-- 404 Text Content -->
+    <div class="space-y-3">
+      <h1 class="text-4xl font-extrabold tracking-tight text-brand-text-head dark:text-white">
+        404 - Server offline?
+      </h1>
+      <p class="text-lg font-semibold text-brand-secondary">
+        Oh nein! Yuno hat das Serverkabel gefunden.
+      </p>
+      <p class="text-sm text-brand-text-body dark:text-gray-400 max-w-sm mx-auto leading-relaxed">
+        Yuno (der kleine freche Kater) liebt bunte Kabel leider fast so sehr wie wir gutes Print & Webdesign. Keine Sorge, wir löten das wieder zusammen!
+      </p>
+    </div>
+
+    <!-- Action Link -->
+    <div class="pt-4">
+      <a routerLink="/" class="btn-primary">
+        Zurück zur Startseite
+      </a>
+    </div>
+
+  </div>
+</div>

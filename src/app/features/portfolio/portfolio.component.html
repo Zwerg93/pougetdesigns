@@ -1,0 +1,58 @@
+<section class="py-20 bg-brand-light dark:bg-brand-dark transition-colors duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Title Area -->
+    <div class="max-w-3xl mx-auto text-center mb-20 space-y-4">
+      <span class="text-xs font-bold uppercase tracking-widest text-brand-primary dark:text-brand-secondary">Referenzen</span>
+      <h1 class="text-4xl sm:text-5xl font-black text-brand-text-head dark:text-white tracking-tight">Erfolgsgeschichten</h1>
+      <p class="text-brand-text-body dark:text-gray-400">
+        Entdecken Sie Design-Projekte und deren Umsetzung für anspruchsvolle Kunden.
+      </p>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      @for (project of projects(); track project.slug; let i = $index) {
+        <article class="group overflow-hidden card-neo shadow-sm">
+          <a [routerLink]="['/portfolio', project.slug]">
+            
+            <!-- Image (Optimized) -->
+            <div class="relative aspect-video w-full overflow-hidden bg-slate-100 dark:bg-slate-800">
+              <img 
+                [ngSrc]="project.imageUrl" 
+                fill 
+                [priority]="i === 0"
+                alt="Vorschau von {{ project.title }}" 
+                class="object-cover group-hover:scale-103 transition-transform duration-500"
+                sizes="(max-width: 768px) 100vw, 33vw">
+            </div>
+
+            <!-- Details -->
+            <div class="p-8 space-y-3">
+              <span class="inline-block text-xs font-bold text-brand-primary dark:text-brand-secondary uppercase tracking-wider">
+                {{ project.category }}
+              </span>
+              <h3 class="text-xl font-bold text-brand-text-head dark:text-white group-hover:text-brand-primary transition-colors duration-300">
+                {{ project.title }}
+              </h3>
+              <p class="text-sm text-brand-text-body dark:text-gray-400 leading-relaxed line-clamp-3">
+                {{ project.description }}
+              </p>
+              
+              <!-- Technologies Tag Bar -->
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                @for (tech of project.technologies; track tech) {
+                  <span class="px-2 py-1 bg-slate-50 dark:bg-white/5 text-brand-text-body dark:text-gray-400 text-[10px] font-bold rounded-lg border border-slate-100 dark:border-white/5">
+                    {{ tech }}
+                  </span>
+                }
+              </div>
+            </div>
+
+          </a>
+        </article>
+      }
+    </div>
+
+  </div>
+</section>

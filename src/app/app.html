@@ -1,0 +1,52 @@
+<div class="flex flex-col min-h-screen bg-brand-light dark:bg-brand-dark text-brand-text-body transition-colors duration-300 font-sans">
+  <!-- Global Navigation Header -->
+  <app-navbar></app-navbar>
+
+  <!-- Main Router Content -->
+  <main class="flex-grow">
+    <router-outlet></router-outlet>
+  </main>
+
+  <!-- Global Footer -->
+  <app-footer></app-footer>
+
+  <!-- Dynamic GDPR Cookie Banner -->
+  <app-cookie-banner></app-cookie-banner>
+
+  <!-- Interactive Ruby-Mode Paw Print Easter Egg -->
+  @if (rubyModeService.isRubyModeActive()) {
+    <div class="fixed inset-0 z-50 pointer-events-none overflow-hidden">
+      <!-- 6 paw prints walking across -->
+      <div class="paw-print paw-1 absolute text-brand-secondary">
+        <svg class="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 14c-1.66 0-3 1.34-3 3 0 2 2 3.5 3 3.5s3-1.5 3-3.5c0-1.66-1.34-3-3-3zm-4.5-4c-.83 0-1.5.67-1.5 1.5s1 2.5 1.5 2.5 1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm9 0c-.83 0-1.5.67-1.5 1.5 0 1 .5 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm-6.5-3c-.83 0-1.5.67-1.5 1.5 0 1 1 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm4 0c-.83 0-1.5.67-1.5 1.5 0 1 1 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5z"/>
+        </svg>
+      </div>
+      <div class="paw-print paw-2 absolute text-brand-secondary">
+        <svg class="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 14c-1.66 0-3 1.34-3 3 0 2 2 3.5 3 3.5s3-1.5 3-3.5c0-1.66-1.34-3-3-3zm-4.5-4c-.83 0-1.5.67-1.5 1.5s1 2.5 1.5 2.5 1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm9 0c-.83 0-1.5.67-1.5 1.5 0 1 .5 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm-6.5-3c-.83 0-1.5.67-1.5 1.5 0 1 1 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm4 0c-.83 0-1.5.67-1.5 1.5 0 1 1 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5z"/>
+        </svg>
+      </div>
+      <div class="paw-print paw-3 absolute text-brand-secondary">
+        <svg class="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 14c-1.66 0-3 1.34-3 3 0 2 2 3.5 3 3.5s3-1.5 3-3.5c0-1.66-1.34-3-3-3zm-4.5-4c-.83 0-1.5.67-1.5 1.5s1 2.5 1.5 2.5 1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm9 0c-.83 0-1.5.67-1.5 1.5 0 1 .5 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm-6.5-3c-.83 0-1.5.67-1.5 1.5 0 1 1 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm4 0c-.83 0-1.5.67-1.5 1.5 0 1 1 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5z"/>
+        </svg>
+      </div>
+      <div class="paw-print paw-4 absolute text-brand-secondary">
+        <svg class="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 14c-1.66 0-3 1.34-3 3 0 2 2 3.5 3 3.5s3-1.5 3-3.5c0-1.66-1.34-3-3-3zm-4.5-4c-.83 0-1.5.67-1.5 1.5s1 2.5 1.5 2.5 1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm9 0c-.83 0-1.5.67-1.5 1.5 0 1 .5 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm-6.5-3c-.83 0-1.5.67-1.5 1.5 0 1 1 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm4 0c-.83 0-1.5.67-1.5 1.5 0 1 1 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5z"/>
+        </svg>
+      </div>
+      <div class="paw-print paw-5 absolute text-brand-secondary">
+        <svg class="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 14c-1.66 0-3 1.34-3 3 0 2 2 3.5 3 3.5s3-1.5 3-3.5c0-1.66-1.34-3-3-3zm-4.5-4c-.83 0-1.5.67-1.5 1.5s1 2.5 1.5 2.5 1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm9 0c-.83 0-1.5.67-1.5 1.5 0 1 .5 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm-6.5-3c-.83 0-1.5.67-1.5 1.5 0 1 1 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm4 0c-.83 0-1.5.67-1.5 1.5 0 1 1 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5z"/>
+        </svg>
+      </div>
+      <div class="paw-print paw-6 absolute text-brand-secondary">
+        <svg class="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 14c-1.66 0-3 1.34-3 3 0 2 2 3.5 3 3.5s3-1.5 3-3.5c0-1.66-1.34-3-3-3zm-4.5-4c-.83 0-1.5.67-1.5 1.5s1 2.5 1.5 2.5 1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm9 0c-.83 0-1.5.67-1.5 1.5 0 1 .5 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm-6.5-3c-.83 0-1.5.67-1.5 1.5 0 1 1 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5zm4 0c-.83 0-1.5.67-1.5 1.5 0 1 1 2.5 1.5 2.5s1.5-1.5 1.5-2.5c0-.83-.67-1.5-1.5-1.5z"/>
+        </svg>
+      </div>
+    </div>
+  }
+</div>

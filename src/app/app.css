@@ -1,0 +1,18 @@
+@keyframes paw-fade {
+  0% { opacity: 0; transform: scale(0.6) rotate(25deg); }
+  15% { opacity: 0.85; transform: scale(1) rotate(25deg); }
+  85% { opacity: 0.85; transform: scale(1) rotate(25deg); }
+  100% { opacity: 0; transform: scale(0.6) rotate(25deg); }
+}
+
+.paw-print {
+  opacity: 0;
+  animation: paw-fade 1.4s ease-in-out forwards;
+}
+
+.paw-1 { left: 15%; top: 75%; animation-delay: 0s; }
+.paw-2 { left: 28%; top: 62%; animation-delay: 0.3s; }
+.paw-3 { left: 41%; top: 49%; animation-delay: 0.6s; }
+.paw-4 { left: 54%; top: 36%; animation-delay: 0.9s; }
+.paw-5 { left: 67%; top: 23%; animation-delay: 1.2s; }
+.paw-6 { left: 80%; top: 10%; animation-delay: 1.5s; }

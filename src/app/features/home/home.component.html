@@ -1,0 +1,139 @@
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-brand-light dark:bg-brand-dark transition-colors duration-300 py-20 lg:py-32">
+  <!-- Radial Glow -->
+  <div class="absolute inset-0 bg-radial from-brand-primary/5 to-transparent dark:from-brand-primary/2 pointer-events-none"></div>
+  
+  <!-- Subtiles "Günsel" Muster im Hintergrund (Easter Egg / Design Detail) -->
+  <div class="absolute right-0 bottom-0 top-0 w-1/2 opacity-[0.04] dark:opacity-[0.02] pointer-events-none text-brand-primary">
+    <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="0.3">
+      <!-- Abstraktes geometrisches Blatt- & Blütenmuster (Günsel-Blueprint) -->
+      <path d="M50 10 C65 25 80 45 50 65 C20 45 35 25 50 10 Z"/>
+      <path d="M50 30 C60 40 70 55 50 70 C30 55 40 40 50 30 Z"/>
+      <path d="M50 50 C55 55 60 65 50 75 C40 65 45 55 50 50 Z"/>
+      <circle cx="50" cy="50" r="10" stroke-dasharray="1,2"/>
+      <circle cx="50" cy="50" r="25" stroke-dasharray="1,4"/>
+      <line x1="50" y1="0" x2="50" y2="100" stroke-dasharray="2,2"/>
+      <line x1="0" y1="50" x2="100" y2="50" stroke-dasharray="2,2"/>
+    </svg>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <div class="max-w-3xl space-y-8">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-primary/5 dark:bg-white/5 border border-brand-primary/10 dark:border-white/10 text-xs font-bold uppercase tracking-wider text-brand-primary dark:text-brand-secondary">
+        <span class="w-2 h-2 rounded-full bg-brand-secondary animate-ping"></span>
+        Print- & Webdesign • Fotografie
+      </div>
+      
+      <h1 class="text-4xl sm:text-6xl font-black text-brand-text-head dark:text-white leading-tight tracking-tight">
+        Kreatives Print- & Webdesign sowie <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary">professionelle Fotografie</span>.
+      </h1>
+      
+      <p class="text-lg text-brand-text-body dark:text-gray-400 leading-relaxed max-w-2xl">
+        Individuelle Design-Konzepte aus Österreich. Von hochwertigen Drucksorten, Büchern und Magazinen bis hin zu durchdachten Webauftritten und ausdrucksstarken Fotoshootings begleite ich Sie ganzheitlich bei Ihrem perfekten Markenauftritt.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a routerLink="/portfolio" class="btn-primary">
+          Projekte ansehen
+        </a>
+        <a routerLink="/kontakt" class="btn-secondary">
+          Kontakt aufnehmen
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Strengths / Values Section -->
+<section class="py-20 bg-white dark:bg-brand-dark/95 border-y border-slate-200 dark:border-white/5 transition-colors duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+      <h2 class="text-3xl font-extrabold text-brand-text-head dark:text-white">Ganzheitlicher Markenauftritt</h2>
+      <p class="text-brand-text-body dark:text-gray-400">
+        Erfolgreiche Kommunikation verbindet Print, Screen und Bildsprache zu einer stimmigen Identität.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Strength 1: Print & Digital Design -->
+      <div class="p-8 card-neo group">
+        <div class="w-12 h-12 rounded-2xl bg-brand-primary/5 dark:bg-white/5 flex items-center justify-center text-brand-primary dark:text-brand-secondary mb-6 group-hover:scale-110 transition-transform">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.243.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-brand-text-head dark:text-white mb-3">Omnichannel Design</h3>
+        <p class="text-sm text-brand-text-body dark:text-gray-400 leading-relaxed">
+          Stimmige Markenidentitäten von der gedruckten Speisekarte und Geschäftspapieren bis hin zu responsive Screendesigns und Digital Signage Menü-Screens im Laden.
+        </p>
+      </div>
+
+      <!-- Strength 2: UI/UX & Webdesign -->
+      <div class="p-8 card-neo group">
+        <div class="w-12 h-12 rounded-2xl bg-brand-primary/5 dark:bg-white/5 flex items-center justify-center text-brand-primary dark:text-brand-secondary mb-6 group-hover:scale-110 transition-transform">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-brand-text-head dark:text-white mb-3">Modernes Webdesign</h3>
+        <p class="text-sm text-brand-text-body dark:text-gray-400 leading-relaxed">
+          Pixelperfekt gestaltete, benutzerzentrierte und performante Interfaces. Ich kenne die technologischen Möglichkeiten und designe barrierefrei und intuitiv.
+        </p>
+      </div>
+
+      <!-- Strength 3: Fotografie -->
+      <div class="p-8 card-neo group">
+        <div class="w-12 h-12 rounded-2xl bg-brand-primary/5 dark:bg-white/5 flex items-center justify-center text-brand-primary dark:text-brand-secondary mb-6 group-hover:scale-110 transition-transform">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+            <circle cx="12" cy="13" r="4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-brand-text-head dark:text-white mb-3">Professionelle Fotografie</h3>
+        <p class="text-sm text-brand-text-body dark:text-gray-400 leading-relaxed">
+          Authentische Vor-Ort-Fotoshootings für Gastronomie, Handwerk und Dienstleister. Ich rücke Ihre Produkte, Räumlichkeiten und Mitarbeiter ins rechte Licht.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Featured Projects Section -->
+<section class="py-20 bg-brand-light dark:bg-brand-dark transition-colors duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+      <div class="space-y-4">
+        <h2 class="text-3xl font-extrabold text-brand-text-head dark:text-white">Ausgewählte Projekte</h2>
+        <p class="text-brand-text-body dark:text-gray-400 max-w-xl">
+          Werfen Sie einen Blick auf Arbeiten im Bereich Grafik-, Print-, Webdesign und Fotografie.
+        </p>
+      </div>
+      <a routerLink="/portfolio" class="inline-flex items-center gap-2 text-brand-primary dark:text-brand-secondary font-bold hover:text-brand-primary/80 transition-colors">
+        Alle Projekte ansehen
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Project Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      @for (project of projects(); track project.slug; let i = $index) {
+        <article class="group rounded-2xl overflow-hidden card-neo shadow-sm">
+          <a [routerLink]="['/portfolio', project.slug]">
+            <div class="relative aspect-video w-full overflow-hidden bg-slate-100 dark:bg-slate-800">
+              <img [ngSrc]="project.imageUrl" fill [priority]="i === 0" alt="{{ project.title }}" class="object-cover group-hover:scale-103 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw">
+            </div>
+            <div class="p-6 md:p-8 space-y-3">
+              <span class="text-xs font-bold text-brand-primary dark:text-brand-secondary uppercase tracking-wider">{{ project.category }}</span>
+              <h3 class="text-xl font-bold text-brand-text-head dark:text-white group-hover:text-brand-primary transition-colors">{{ project.title }}</h3>
+              <p class="text-sm text-brand-text-body dark:text-gray-400 leading-relaxed line-clamp-2">{{ project.description }}</p>
+            </div>
+          </a>
+        </article>
+      }
+    </div>
+  </div>
+</section>

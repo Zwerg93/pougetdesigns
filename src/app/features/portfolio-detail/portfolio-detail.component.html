@@ -1,0 +1,524 @@
+@if (project()) {
+  @let p = project()!;
+
+  <div class="py-12 md:py-20 bg-brand-light dark:bg-brand-dark text-brand-dark dark:text-white transition-colors duration-300 min-h-screen">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+      <!-- Back Button -->
+      <div class="mb-8">
+        <a routerLink="/portfolio" class="inline-flex items-center gap-2 text-sm font-bold text-gray-500 hover:text-brand-secondary dark:text-gray-400 dark:hover:text-brand-secondary transition-colors group">
+          <svg class="w-4 h-4 transform group-hover:-translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          Zurück zur Übersicht
+        </a>
+      </div>
+
+      <!-- Dynamic Project Switcher -->
+      @switch (p.slug) {
+
+        <!-- CASE 1: ASKALAPS IOT -->
+        @case ('askalaps-iot') {
+          <article class="space-y-12">
+            <!-- Header Block -->
+            <div class="space-y-4">
+              <span class="inline-block px-3.5 py-1.5 rounded-full bg-brand-secondary/15 text-brand-secondary text-xs font-bold uppercase tracking-wider">
+                Full-Stack Development / IoT & Hardware Prototyping / R&D
+              </span>
+              <h1 class="text-3xl md:text-5xl font-black text-brand-primary dark:text-white leading-tight">
+                Askalaps: IoT-Hardware trifft auf Enterprise SaaS
+              </h1>
+              <div class="flex items-center gap-6 text-sm text-gray-500 dark:text-gray-400 font-medium">
+                <span><strong>Zeitraum:</strong> 2025 – heute</span>
+              </div>
+            </div>
+
+            <!-- Media Section: 3D Video Render -->
+            <div class="space-y-4">
+              <h2 class="text-xl md:text-2xl font-bold text-brand-primary dark:text-white border-l-4 border-brand-secondary pl-3">
+                Produkt-Showcase & Gehäuse (Video)
+              </h2>
+              <div class="aspect-video w-full max-w-4xl bg-gray-900 rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+                <video src="Askalaps/render2.mp4" controls loop muted autoplay class="w-full h-full object-cover"></video>
+              </div>
+            </div>
+
+            <!-- Detailed Chapters -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+              <div class="lg:col-span-2 space-y-10 text-gray-600 dark:text-gray-300 leading-relaxed">
+
+                <section class="space-y-4">
+                  <h3 class="text-2xl font-black text-brand-primary dark:text-white">Die Herausforderung: Das "Revenue Leakage" Problem</h3>
+                  <p>
+                    In der Dienstleistungsbranche (Agenturen, IT, Consulting) ist Zeit die wichtigste Ressource. Dennoch verlieren Unternehmen jährlich tausende Euro pro Mitarbeiter durch ungenaue, vergessene oder rückwirkend geschätzte Arbeitszeiten ("Revenue Leakage"). Der Grund? Herkömmliche Software-Zeiterfassung erfordert ständige Medienbrüche. Sie reißt Mitarbeiter aus dem Fokus (Context Switching) und wird im Arbeitsalltag schlichtweg vergessen.
+                  </p>
+                  <p>
+                    <strong>Das Ziel:</strong> Eine Lösung zu entwickeln, die kognitive Reibung komplett eliminiert und Zeiterfassung von einer administrativen Last in das automatisierte Fundament der Unternehmenssteuerung verwandelt.
+                  </p>
+                </section>
+
+                <section class="space-y-4">
+                  <h3 class="text-2xl font-black text-brand-primary dark:text-white">Die Lösung: Hardware-Präzision statt Software-Chaos</h3>
+                  <p>
+                    Askalaps ist kein weiteres Tracking-Tool auf dem Bildschirm, sondern eine physische IoT-Lösung, die sich nahtlos in den Arbeitsplatz integriert.
+                  </p>
+                  <p>Das System besteht aus zwei Kernkomponenten:</p>
+                  <ul class="list-decimal pl-5 space-y-2.5">
+                    <li><strong>Der Askalaps Cube 2 (Hardware)</strong>: Ein physischer Controller auf dem Schreibtisch mit Display und Drehgeber. Er dient als visueller Anker. Projektwechsel und Zeiterfassung passieren intuitiv und haptisch – ganz ohne den PC entsperren oder den Tab wechseln zu müssen.</li>
+                    <li><strong>Die Business Suite (Software)</strong>: Ein massiv skalierbares Cloud-Backend, das die Hardware-Daten in Echtzeit in einer Professional Services Automation (PSA) Plattform verarbeitet. Von der Budgetierung über Ressourcenplanung bis zur Rechnungslegung.</li>
+                  </ul>
+                </section>
+
+                <section class="space-y-4">
+                  <h3 class="text-2xl font-black text-brand-primary dark:text-white">Technologischer Deep Dive</h3>
+                  <p>
+                    Das Fundament von Askalaps beweist unsere Fähigkeit, komplexe, interdisziplinäre Systeme von der Hardware-Platine bis zum Cloud-Frontend zu orchestrieren.
+                  </p>
+                  <ul class="list-disc pl-5 space-y-3">
+                    <li><strong>Custom Networking (ALBP)</strong>: Für die Übertragung der Daten aus restriktiven Firmennetzwerken haben wir das Askalaps Binary Protocol (ALBP) entwickelt. Ein extrem leichtgewichtiges, bitgenaues Application-Layer-Protokoll, das Daten ohne JSON-Overhead für LoRaWAN, BLE und MQTT komprimiert.</li>
+                    <li><strong>IoT & Firmware</strong>: Die Hardware basiert auf ESP32 Microcontrollern, programmiert in C++. Die Anbindung erfolgt über modernste IoT-Standards (ChirpStack, MQTT-Broker).</li>
+                    <li><strong>Enterprise Backend</strong>: Entwickelt in Java (Quarkus) mit einer strikten Mandantenfähigkeit, komplexen Role-Based Access Control (RBAC) Systemen für Manager/Mitarbeiter-Rechte und einer tiefgreifenden Datenbankarchitektur.</li>
+                    <li><strong>Frontend</strong>: Ein modulares, hochperformantes Dashboard in Angular, das komplexe Daten wie Gantt-Charts, HR-Abwesenheiten und Rechnungslegungen übersichtlich für verschiedene Nutzergruppen (Solo-Planner vs. Business Suite) visualisiert.</li>
+                  </ul>
+                </section>
+
+                <!-- Click to Fullscreen Showcase -->
+                <section class="space-y-4">
+                  <h3 class="text-2xl font-black text-brand-primary dark:text-white">Screenshots der Weboberfläche (Klicken für Vollbild)</h3>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                      <div (click)="openLightbox('Askalaps/dashboard.png')" class="relative aspect-[9/16] max-h-[350px] bg-gray-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-white/5 cursor-zoom-in hover:scale-[1.01] transition-transform duration-200">
+                        <img ngSrc="Askalaps/dashboard.png" fill alt="Askalaps Dashboard Mobile" class="object-contain" sizes="(max-width: 768px) 100vw, 33vw">
+                      </div>
+                      <p class="text-xs text-center text-gray-400">Arbeitszeiten-Übersicht im Dashboard</p>
+                    </div>
+                    <div class="space-y-2">
+                      <div (click)="openLightbox('Askalaps/details.png')" class="relative aspect-[9/16] max-h-[350px] bg-gray-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-white/5 cursor-zoom-in hover:scale-[1.01] transition-transform duration-200">
+                        <img ngSrc="Askalaps/details.png" fill alt="Askalaps Detailsteuerung" class="object-contain" sizes="(max-width: 768px) 100vw, 33vw">
+                      </div>
+                      <p class="text-xs text-center text-gray-400">Projektzuordnungen und Auswertungen</p>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="space-y-4">
+                  <h3 class="text-2xl font-black text-brand-primary dark:text-white">Cube 2 Gehäuse Design & Prototypen (Klicken für Vollbild)</h3>
+                  <div class="grid grid-cols-3 gap-4">
+                    <div (click)="openLightbox('Askalaps/Flowboy__3.png')" class="relative aspect-square rounded-xl overflow-hidden border border-gray-150 dark:border-white/5 cursor-zoom-in hover:scale-[1.02] transition-transform">
+                      <img ngSrc="Askalaps/Flowboy__3.png" fill alt="Cube 2 Render 1" class="object-cover" sizes="33vw">
+                    </div>
+                    <div (click)="openLightbox('Askalaps/Flowboy__4.png')" class="relative aspect-square rounded-xl overflow-hidden border border-gray-150 dark:border-white/5 cursor-zoom-in hover:scale-[1.02] transition-transform">
+                      <img ngSrc="Askalaps/Flowboy__4.png" fill alt="Cube 2 Render 2" class="object-cover" sizes="33vw">
+                    </div>
+                    <div (click)="openLightbox('Askalaps/Flowboy__5.png')" class="relative aspect-square rounded-xl overflow-hidden border border-gray-150 dark:border-white/5 cursor-zoom-in hover:scale-[1.02] transition-transform">
+                      <img ngSrc="Askalaps/Flowboy__5.png" fill alt="Cube 2 Render 3" class="object-cover" sizes="33vw">
+                    </div>
+                  </div>
+                </section>
+
+                <!-- Plakat Toni Section -->
+                <section class="space-y-4">
+                  <h3 class="text-2xl font-black text-brand-primary dark:text-white">Projektplakat (Klicken für Vollbild)</h3>
+                  <div (click)="openLightbox('Askalaps/Plalat Toni.png')" class="relative aspect-[3/4] max-w-md bg-gray-100 dark:bg-gray-800 rounded-3xl overflow-hidden border border-gray-150 dark:border-white/5 shadow-lg cursor-zoom-in hover:scale-[1.01] transition-transform duration-200">
+                    <img ngSrc="Askalaps/Plalat Toni.png" fill alt="Askalaps Plakat Toni" class="object-contain" sizes="(max-width: 768px) 100vw, 50vw">
+                  </div>
+                </section>
+
+              </div>
+
+              <!-- Sidebar Info -->
+              <div class="space-y-8 bg-white dark:bg-white/5 p-8 rounded-3xl border border-gray-150 dark:border-white/5 h-fit shadow-md">
+                <div>
+                  <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Rolle & Verantwortung</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
+                    Askalaps entstand als R&D-Projekt und Proof of Concept. Als Projektleiter und Lead Developer war ich verantwortlich für:
+                  </p>
+                  <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                    <li>✓ <strong>Systemarchitektur & Security</strong>: Konzeption der gesamten Infrastruktur (Cube -> Broker -> Backend -> Frontend) und Absicherung der Übertragungswege.</li>
+                    <li>✓ <strong>Protokoll-Entwicklung</strong>: Spezifikation und Implementierung des ressourcenschonenden Askalaps Binary Protocols (ALBP).</li>
+                    <li>✓ <strong>Go-to-Market & Strategie</strong>: Vorbereitung des Business Cases und erfolgreiche Positionierung für den <em>aws First Incubator</em>.</li>
+                  </ul>
+                </div>
+
+                <hr class="border-gray-100 dark:border-white/5">
+
+                <div>
+                  <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Technologien</h3>
+                  <div class="flex flex-wrap gap-2">
+                    @for (tech of p.technologies; track tech) {
+                      <span class="px-3 py-1.5 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-bold rounded-lg border border-gray-150 dark:border-white/5">
+                        {{ tech }}
+                      </span>
+                    }
+                  </div>
+                </div>
+
+                <hr class="border-gray-100 dark:border-white/5">
+
+                <div>
+                  <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Download</h3>
+                  <a [href]="p.pdfUrl" download target="_blank"
+                     class="inline-flex items-center gap-2.5 px-5 py-3 rounded-xl bg-brand-accent hover:bg-teal-600 text-white font-bold text-sm shadow-md hover:shadow-lg transition-all w-full justify-center">
+                    <svg class="w-4 h-4 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    {{ p.pdfLabel }} herunterladen
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        }
+
+        <!-- CASE 2: DIPLOMARBEIT LADEMANAGER (SMART EV-CHARGING SYSTEM) -->
+        @case ('diplomarbeit-lademanager') {
+          <article class="space-y-12">
+            <!-- Header Block -->
+            <div class="space-y-4">
+              <span class="inline-block px-3.5 py-1.5 rounded-full bg-brand-secondary/15 text-brand-secondary text-xs font-bold uppercase tracking-wider">
+                IoT Development / Hardware-Software Integration / Green Tech
+              </span>
+              <h1 class="text-3xl md:text-5xl font-black text-brand-primary dark:text-white leading-tight">
+                Smart EV-Charging System: IoT & Energy Management
+              </h1>
+              <div class="flex items-center gap-6 text-sm text-gray-500 dark:text-gray-400 font-medium">
+                <span><strong>Zeitraum:</strong> 2022 – 2023</span>
+              </div>
+            </div>
+
+            <!-- Teaser Image -->
+            <div (click)="openLightbox('diplomarbeit/architecture.png')" class="relative w-full h-[250px] md:h-[400px] bg-gray-100 dark:bg-gray-800 rounded-3xl overflow-hidden border border-gray-150 dark:border-white/5 shadow-lg cursor-zoom-in hover:opacity-95 transition-opacity">
+              <img ngSrc="diplomarbeit/architecture.png" fill priority alt="Systemarchitektur des Lademanagers" class="object-contain p-4" sizes="(max-width: 1024px) 100vw, 80vw">
+            </div>
+
+            <!-- Content Structure from PDF -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+              <div class="lg:col-span-2 space-y-10 text-gray-600 dark:text-gray-300 leading-relaxed">
+
+                <section class="space-y-4">
+                  <h3 class="text-2xl font-black text-brand-primary dark:text-white">Die Herausforderung: Isolierte Hardware-Inseln</h3>
+                  <p>
+                    Mit der Anschaffung neuer Elektroautos und einer 170 kWp Photovoltaik-Anlage stand ein Industrieunternehmen vor einem klassischen Digitalisierungsproblem: Die Hardware war zwar physisch vorhanden (fünf 22kW I-CHARGE CION Wallboxen), aber digital isoliert.
+                  </p>
+                  <p>
+                    Es gab keine Möglichkeit, die Ladestationen zentral zu steuern, den aktuellen Stromverbrauch zu überwachung oder das Ladeverhalten an die eigene Stromproduktion (Solarüberschuss) anzupassen.
+                  </p>
+                  <p>
+                    <strong>Das Ziel:</strong> Die Entwicklung eines intelligenten "Charge Managers", der als Middleware fungiert und die Ladeinfrastruktur nahtlos in die bestehende, firmeninterne IT-Landschaft (die "Flexcloud") integriert.
+                  </p>
+                </section>
+
+                <section class="space-y-4">
+                  <h3 class="text-2xl font-black text-brand-primary dark:text-white">Die Lösung: Custom IoT-Gateway & Überschussladen</h3>
+                  <p>
+                    Um die Lücke zwischen der industriellen Hardware und dem Firmennetzwerk zu schließen, habe ich ein Java-basiertes IoT-Gateway entwickelt, das auf einem Raspberry Pi im Schaltschrank operiert.
+                  </p>
+                  <ul class="list-disc pl-5 space-y-3">
+                    <li><strong>Protokoll-Engineering (Modbus RTU/TCP)</strong>: Die gesamte Kommunikation mit die Hardware wurde von Grund auf neu implementiert. Über serielle Schnittstellen (Modbus RS485) werden die Wallboxen angesteuert (z.B. Start/Stop, Vorgabe der Ladeleistung in Ampere). Parallel dazu liest das System via Modbus TCP in Echtzeit die Daten der Fronius-Wechselrichter und der Janitza-Messklemmen am Netzanschluss aus.</li>
+                    <li><strong>Logik-Controller & Smartes Laden</strong>: Das Herzstück der Architektur ist der "Charge Controller". Diese Logikeinheit verarbeitet alle Datenströme. Das absolute Highlight-Feature ist das automatisierte Überschussladen (Priorisiertes Laden): Erkennt das System, dass die Photovoltaik-Anlage aktuell mehr als 10 kW überschüssigen Strom produziert (und nicht ins Netz einspeisen muss), schaltet es die Wallboxen automatisch auf maximale Ladeleistung. Sinkt der Solarertrag, wird die Ladeleistung intelligent gedrosselt.</li>
+                    <li><strong>Nahtlose HMI-Integration</strong>: Das System übersetzt die komplexen Hexadezimal- und Binärwerte der Hardware in klare Datenpunkte, die von den Mitarbeitern über eine grafische Oberfläche (HMI) im Firmennetzwerk per Klick oder Slider gesteuert werden können.</li>
+                  </ul>
+                </section>
+
+                <section class="space-y-4">
+                  <h3 class="text-2xl font-black text-brand-primary dark:text-white">Benutzeroberflächen & HMI-Visualisierung (Klicken für Vollbild)</h3>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div (click)="openLightbox('diplomarbeit/hmi_list.png')" class="relative aspect-[9/16] max-h-[350px] bg-gray-800 rounded-xl overflow-hidden border border-gray-150 dark:border-white/5 cursor-zoom-in hover:scale-[1.01] transition-transform">
+                      <img ngSrc="diplomarbeit/hmi_list.png" fill alt="HMI List" class="object-contain" sizes="33vw">
+                    </div>
+                    <div (click)="openLightbox('diplomarbeit/hmi_detail.png')" class="relative aspect-[9/16] max-h-[350px] bg-gray-800 rounded-xl overflow-hidden border border-gray-150 dark:border-white/5 cursor-zoom-in hover:scale-[1.01] transition-transform">
+                      <img ngSrc="diplomarbeit/hmi_detail.png" fill alt="HMI Detail" class="object-contain" sizes="33vw">
+                    </div>
+                  </div>
+                </section>
+
+              </div>
+
+              <!-- Sidebar Info -->
+              <div class="space-y-8 bg-white dark:bg-white/5 p-8 rounded-3xl border border-gray-150 dark:border-white/5 h-fit shadow-md">
+                <div>
+                  <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Rolle & Verantwortung</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
+                    Als Lead Developer für den Bereich Hardware-Integration und Steuerung war ich verantwortlich für:
+                  </p>
+                  <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                    <li>✓ <strong>Systemarchitektur & Reverse Engineering</strong>: Identifikation der korrekten Kommunikations-Pins und Register-Adressen der undokumentierten Hardware.</li>
+                    <li>✓ <strong>Backend-Entwicklung</strong>: Programmierung des Java-Gateways und des Logik-Controllers für das firmeninterne Microservice-Ökosystem.</li>
+                    <li>✓ <strong>Green Tech / Energy Management</strong>: Konzeption und Implementierung der Logik für das automatisierte, solar-optimierte Laden zur Reduktion der Energiekosten.</li>
+                  </ul>
+                </div>
+
+                <hr class="border-gray-100 dark:border-white/5">
+
+                <div>
+                  <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Technologien</h3>
+                  <div class="flex flex-wrap gap-2">
+                    @for (tech of p.technologies; track tech) {
+                      <span class="px-3 py-1.5 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-bold rounded-lg border border-gray-150 dark:border-white/5">
+                        {{ tech }}
+                      </span>
+                    }
+                  </div>
+                </div>
+
+                <hr class="border-gray-100 dark:border-white/5">
+
+                <div>
+                  <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Dokumenten-Download</h3>
+                  <a [href]="p.pdfUrl" download target="_blank"
+                     class="inline-flex items-center gap-2.5 px-5 py-3 rounded-xl bg-brand-accent hover:bg-teal-600 text-white font-bold text-sm shadow-md hover:shadow-lg transition-all w-full justify-center">
+                    <svg class="w-4 h-4 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    {{ p.pdfLabel }} herunterladen
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        }
+
+        <!-- CASE 3: HARFENBAU RESCHENHOFER -->
+        @case ('harfenbau-reschenhofer') {
+          <article class="space-y-12">
+            <!-- Header Block -->
+            <div class="space-y-4">
+              <span class="inline-block px-3.5 py-1.5 rounded-full bg-brand-secondary/15 text-brand-secondary text-xs font-bold uppercase tracking-wider">
+                Web Development / Tech-Migration / UI-Design
+              </span>
+              <h1 class="text-3xl md:text-5xl font-black text-brand-primary dark:text-white leading-tight">
+                Harfenbau Reschenhofer: Moderne Web-Architektur für traditionelles Handwerk
+              </h1>
+              <div class="flex items-center gap-6 text-sm text-gray-500 dark:text-gray-400 font-medium">
+                <span><strong>Zeitraum:</strong> Laufende Betreuung (seit über 4 Jahren)</span>
+              </div>
+            </div>
+
+            <!-- Teaser Image -->
+            <div (click)="openLightbox('Harfenbau/home.png')" class="relative w-full h-[300px] md:h-[450px] bg-gray-100 dark:bg-gray-800 rounded-3xl overflow-hidden border border-gray-150 dark:border-white/5 shadow-lg cursor-zoom-in hover:opacity-95 transition-opacity">
+              <img ngSrc="Harfenbau/home.png" fill priority alt="Screendesign der Harfenbau Homepage" class="object-cover" sizes="(max-width: 1024px) 100vw, 80vw">
+            </div>
+
+            <!-- Detailed content -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+              <div class="lg:col-span-2 space-y-10 text-gray-600 dark:text-gray-300 leading-relaxed">
+
+                <section class="space-y-4">
+                  <h3 class="text-2xl font-black text-brand-primary dark:text-white">Die Herausforderung: Das Ende des Lifecycles</h3>
+                  <p>
+                    Franz Reschenhofer ist international für die Herstellung und Restaurierung von historischen Saiteninstrumenten bekannt. Seine Website ist nicht nur ein digitales Schaufenster für die Instrumente, sondern auch die zentrale Anlaufstelle für die Buchung seiner Seminare (z.B. mit internationalen Künstlern).
+                  </p>
+                  <p>
+                    Ursprünglich wurde die Website mit WordPress betrieben. Nach mehreren Jahren erreichte das Setup jedoch einen kritischen Punkt: Die verwendete Architektur und die serverseitige PHP-Version wurden nicht mehr offiziell unterstützt. Dies stellte nicht nur ein massives Sicherheitsrisiko dar, sondern schränkte auch die Performance und die künftige Skalierbarkeit der Seite stark ein. Ein reines Update des alten Systems war keine zukunftssichere Option mehr.
+                  </p>
+                  <p>
+                    <strong>Das Ziel:</strong> Ein kompletter technologischer Relaunch. Weg von einem behäbigen CMS, hin zu einer blitzschnellen, sicheren und maßgeschneiderten Web-Applikation, die der hochwertigen Handwerkskunst von Franz Reschenhofer gerecht wird.
+                  </p>
+                </section>
+
+                <section class="space-y-4">
+                  <h3 class="text-2xl font-black text-brand-primary dark:text-white">Die Lösung: Migration von WordPress zu Angular</h3>
+                  <p>
+                    Um maximale Performance und Sicherheit zu gewährleisten, habe ich die komplette Website von Grund auf in Angular neu konzipiert und entwickelt.
+                  </p>
+                  <ul class="list-disc pl-5 space-y-3">
+                    <li><strong>Zukunftssichere Architektur</strong>: Durch den Verzicht auf ein klassisches, datenbankgetriebenes CMS wie WordPress (und das fehleranfällige PHP-Backend) wurden Sicherheitslücken durch veraltete Plugins eliminiert. Die neue Angular-Applikation ist wartungsarm, extrem schnell und bietet eine hervorragende User Experience.</li>
+                    <li><strong>Langfristige Betreuung</strong>: Seit über 4 Jahren verantworte ich die digitale Präsenz von harfenbau.at. Durch die saubere Code-Basis in Angular können neue Inhalte (wie kommende Harfen-Seminare) oder Strukturänderungen nun effizient und fehlerfrei von mir implementiert werden.</li>
+                    <li><strong>Design & User Interface</strong>: Das Design wurde im Zuge der Migration aufpoliert, behält aber den Fokus auf dem Wesentlichen: den Instrumenten und der Handwerkskunst. Die klare Informationsarchitektur führt Besucher intuitiv zu den Seminarterminen und Kontaktmöglichkeiten.</li>
+                  </ul>
+                </section>
+
+                <section class="space-y-4">
+                  <h3 class="text-xl font-bold text-brand-primary dark:text-white">Seminare & Handgefertigte Harfen (Klicken für Vollbild)</h3>
+                  <div (click)="openLightbox('Harfenbau/instruments.png')" class="relative aspect-video w-full rounded-2xl overflow-hidden border border-gray-150 dark:border-white/5 cursor-zoom-in hover:opacity-95 transition-opacity">
+                    <img ngSrc="Harfenbau/instruments.png" fill alt="Harfe Tribella und Harfe Linde" class="object-cover" sizes="(max-width: 768px) 100vw, 50vw">
+                  </div>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                    <div class="bg-white dark:bg-white/5 p-5 rounded-2xl border border-gray-150 dark:border-white/5">
+                      <h4 class="font-bold text-brand-primary dark:text-white mb-2">Seminar-Ankündigungen</h4>
+                      <p class="text-sm">Buchungen und Seminar-Seiten wie z.B. <em>"Harfen Seminar & Gesang mit Arianna Savall & Petter Udland"</em> in der Meisterwerkstatt.</p>
+                    </div>
+                    <div class="bg-white dark:bg-white/5 p-5 rounded-2xl border border-gray-150 dark:border-white/5">
+                      <h4 class="font-bold text-brand-primary dark:text-white mb-2">Instrumentenpräsentation</h4>
+                      <p class="text-sm">Übersicht der meisterlichen Harfen Tribella und Harfe Linde, einschließlich Holzmerkmale und Audiobeispiele.</p>
+                    </div>
+                  </div>
+                </section>
+
+              </div>
+
+              <!-- Sidebar Info -->
+              <div class="space-y-8 bg-white dark:bg-white/5 p-8 rounded-3xl border border-gray-150 dark:border-white/5 h-fit shadow-md">
+                <div>
+                  <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Rolle & Verantwortung</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
+                    Als technischer Partner von Franz Reschenhofer agiere ich als Full-Stack-Betreuer für seine Webpräsenz:
+                  </p>
+                  <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                    <li>✓ <strong>Technologie-Beratung & Migration</strong>: Identifikation des Sicherheitsrisikos beim alten System und strategische Entscheidung für den Umstieg auf Angular (unter Verwendung von <strong>Bootstrap</strong> statt Tailwind für das CSS-Framework).</li>
+                    <li>✓ <strong>Frontend-Entwicklung</strong>: Komplette Neuprogrammierung der Website mit modernen Web-Standards (Angular, TypeScript, Bootstrap).</li>
+                    <li>✓ <strong>Wartung & Support</strong>: Fortlaufende Betreuung, Einpflege neuer Inhalte und Sicherstellung der Systemstabilität seit über 4 Jahren.</li>
+                  </ul>
+                </div>
+
+                <hr class="border-gray-100 dark:border-white/5">
+
+                <div>
+                  <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Technologien & Tools</h3>
+                  <div class="flex flex-wrap gap-2">
+                    @for (tech of p.technologies; track tech) {
+                      <span class="px-3 py-1.5 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-bold rounded-lg border border-gray-150 dark:border-white/5">
+                        {{ tech }}
+                      </span>
+                    }
+                  </div>
+                </div>
+
+                <hr class="border-gray-100 dark:border-white/5">
+
+                <div>
+                  <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Download</h3>
+                  <a [href]="p.pdfUrl" download target="_blank"
+                     class="inline-flex items-center gap-2.5 px-5 py-3 rounded-xl bg-brand-accent hover:bg-teal-600 text-white font-bold text-sm shadow-md hover:shadow-lg transition-all w-full justify-center">
+                    <svg class="w-4 h-4 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    {{ p.pdfLabel }} herunterladen
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        }
+
+        <!-- CASE 4: MAKANI BOWLS -->
+        @case ('makani-bowls') {
+          <article class="space-y-12">
+            <!-- Header Block -->
+            <div class="space-y-4">
+              <span class="inline-block px-3.5 py-1.5 rounded-full bg-brand-secondary/15 text-brand-secondary text-xs font-bold uppercase tracking-wider">
+                Editorial Design / Print Production / Digital Signage
+              </span>
+              <h1 class="text-3xl md:text-5xl font-black text-brand-primary dark:text-white leading-tight">
+                Makani Bowls 'n Rolls: Omnichannel Menü- & Layout-Design
+              </h1>
+              <div class="flex items-center gap-6 text-sm text-gray-500 dark:text-gray-400 font-medium">
+                <span><strong>Zeitraum:</strong> 2023 – heute (Laufende Betreuung)</span>
+              </div>
+            </div>
+
+            <!-- Teaser Image -->
+            <div (click)="openLightbox('Makani/teaser.png')" class="relative w-full h-[300px] md:h-[450px] bg-gray-100 dark:bg-gray-800 rounded-3xl overflow-hidden border border-gray-150 dark:border-white/5 shadow-lg cursor-zoom-in hover:opacity-95 transition-opacity">
+              <img ngSrc="Makani/teaser.png" fill priority alt="Mockup der gedruckten Speisekarte auf einem Holztisch" class="object-cover" sizes="(max-width: 1024px) 100vw, 80vw">
+            </div>
+
+            <!-- Detailed Content -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+              <div class="lg:col-span-2 space-y-10 text-gray-600 dark:text-gray-300 leading-relaxed">
+
+                <section class="space-y-4">
+                  <h3 class="text-2xl font-black text-brand-primary dark:text-white">Die Herausforderung: Informationsarchitektur in der Gastronomie</h3>
+                  <p>
+                    Eine Speisekarte ist das wichtigste Verkaufs- und Kommunikationstool eines Restaurants. Die Herausforderung bei Makani Bowls 'n Rolls lag darin, ein umfangreiches, asiatisches Fusion-Angebot – von komplexen „Build-Your-Own“-Bowls bis hin zu klassischen Sushi-Sets und koreanischen Spezialitäten – so zu strukturieren, dass der Gast sofort Orientierung findet.
+                  </p>
+                  <p>
+                    Gleichzeitig musste das Design hochflexibel sein. In der Gastronomie ändern sich Preise, saisonale Gerichte und Mittagsmenüs regelmäßig. Ein starres Layout führt hier schnell zu Chaos.
+                  </p>
+                  <p>
+                    <strong>Das Ziel:</strong> Ein modulares, skalierbares Design-System zu schaffen, das die moderne Identität von Makani widerspiegelt und medienübergreifend – von der gedruckten Tischkarte bis zum digitalen Menü-Screen über der Kasse – konsistent funktioniert.
+                  </p>
+                </section>
+
+                <section class="space-y-4">
+                  <h3 class="text-2xl font-black text-brand-primary dark:text-white">Die Lösung: Cleanes Editorial Design trifft Digital Signage</h3>
+                  <p>
+                    Seit über drei Jahren verantworte ich ganzheitlich das visuelle Menü-Konzept für Makani. Anstatt die Karte als reine Preisliste zu betrachten, habe ich sie als visuelles Leitsystem aufgebaut.
+                  </p>
+                  <ul class="list-disc pl-5 space-y-3">
+                    <li><strong>Layout & Typografie (Print)</strong>: Umsetzung mit Figma und der Affinity Suite (Publisher & Designer). Durch ein striktes Grid-System, klare typografische Hierarchien und den gezielten Einsatz von Whitespace wirkt die Karte trotz der hohen Informationsdichte (inkl. Allergen-Kennzeichnungen und Schärfegraden) modern, aufgeräumt und hochwertig. Komplexe Bestellprozesse (wie der 4-Schritte-Plan für eigene Bowls) wurden visuell intuitiv aufbereitet.</li>
+                    <li><strong>Digital Signage (In-Store Screens)</strong>: Gastronomie-Marketing findet heute hybrid statt. Um die Wartezeit der Kunden zu überbrücken und visuelle Kaufanreize zu setzen, habe ich das Print-Design für die digitalen Bildschirme im Restaurant adaptiert. Die Steuerung und das Content-Management der Screens erfolgt nahtlos über BA-Connect.</li>
+                    <li><strong>Print Production & Handling</strong>: Von der Auswahl der richtigen Papiermaterialien für den harten Gastronomie-Alltag bis hin zur finalen Druckabwicklung übernehme ich das komplette Print-Management.</li>
+                  </ul>
+                </section>
+
+                <!-- Design Showcase / Mockups Info -->
+                <section class="p-6 bg-brand-secondary/5 dark:bg-white/5 rounded-2xl border border-brand-secondary/15 space-y-3">
+                  <h4 class="font-bold text-brand-primary dark:text-white">Visual Showcase</h4>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">
+                    Die Speisekarte wurde auf strapazierfähigem, abwischbarem Naturkarton gedruckt. Im Restaurant selbst sind drei hochauflösende 55-Zoll-Bildschirme über dem Tresen installiert, die via BA-Connect dynamisch bespielt werden und die Gerichte passend zur Tageszeit bewerben.
+                  </p>
+                </section>
+
+              </div>
+
+              <!-- Sidebar Info -->
+              <div class="space-y-8 bg-white dark:bg-white/5 p-8 rounded-3xl border border-gray-150 dark:border-white/5 h-fit shadow-md">
+                <div>
+                  <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Rolle & Verantwortung</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
+                    Als externer Design-Partner von Makani fungiere ich als "Brand Guardian" für alle Speisekarten-Touchpoints:
+                  </p>
+                  <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                    <li>✓ <strong>Editorial Design</strong>: Konzeption und fortlaufende Aktualisierung der Haupt- und Mittagskarten.</li>
+                    <li>✓ <strong>Cross-Media Publishing</strong>: Überführung der Print-Layouts in digitale Formate für die In-Store-Screens.</li>
+                    <li>✓ <strong>Prozess-Optimierung</strong>: Aufbau von Design-Templates, die schnelle und fehlerfreie Preis- und Menü-Updates ermöglichen.</li>
+                  </ul>
+                </div>
+
+                <hr class="border-gray-100 dark:border-white/5">
+
+                <div>
+                  <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Tools</h3>
+                  <div class="flex flex-wrap gap-2">
+                    @for (tech of p.technologies; track tech) {
+                      <span class="px-3 py-1.5 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-bold rounded-lg border border-gray-150 dark:border-white/5">
+                        {{ tech }}
+                      </span>
+                    }
+                  </div>
+                </div>
+
+                <hr class="border-gray-100 dark:border-white/5">
+
+                <div>
+                  <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Download</h3>
+                  <a [href]="p.pdfUrl" download target="_blank"
+                     class="inline-flex items-center gap-2.5 px-5 py-3 rounded-xl bg-brand-accent hover:bg-teal-600 text-white font-bold text-sm shadow-md hover:shadow-lg transition-all w-full justify-center">
+                    <svg class="w-4 h-4 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    {{ p.pdfLabel }} herunterladen
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        }
+
+      }
+
+    </div>
+  </div>
+
+  <!-- Fullscreen Lightbox Overlay -->
+  @if (activeLightboxImage()) {
+    <div (click)="closeLightbox()" class="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4 transition-all duration-300 animate-fade-in">
+      <button (click)="closeLightbox(); $event.stopPropagation()" class="absolute top-6 right-6 text-white hover:text-brand-secondary transition-colors p-2 bg-white/5 hover:bg-white/10 rounded-full">
+        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div (click)="$event.stopPropagation()" class="relative max-w-5xl max-h-[90vh] flex items-center justify-center">
+        <img [src]="activeLightboxImage()" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl border border-white/10" alt="Vollbild-Vorschau">
+      </div>
+    </div>
+  }
+} @else {
+  <!-- Fallback if project is not loaded/found -->
+  <div class="py-20 text-center bg-brand-light dark:bg-brand-dark min-h-[60vh] flex flex-col items-center justify-center">
+    <p class="text-xl text-gray-500">Das gewünschte Projekt existiert nicht oder konnte nicht geladen werden.</p>
+    <a routerLink="/portfolio" class="mt-6 inline-flex px-6 py-3 bg-brand-primary text-white font-bold rounded-xl shadow-md transition-colors">
+      Zurück zum Portfolio
+    </a>
+  </div>
+}
