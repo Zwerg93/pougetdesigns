@@ -30,8 +30,8 @@ export class SeoService {
       mergeMap(route => route.data)
     ).subscribe((data: any) => {
       const seo: RouteSeoData = data['seo'] || {};
-      const title = seo.title ? `${seo.title} | Pouget Designs` : 'Pouget Designs | Web & Design Agentur';
-      const desc = seo.description || 'Moderne Agentur für anspruchsvolles Webdesign und performante Web-Applikationen.';
+      const title = seo.title ? `${seo.title} | Pouget Designs` : 'Pouget Designs | Web- & Printdesign, Fotografie';
+      const desc = seo.description || 'Individuelle Designkonzepte aus Österreich: hochwertiges Printdesign, moderne Webauftritte und professionelle Fotografie.';
       const ogImage = seo.ogImage || 'assets/default-og.jpg';
 
       // Update document title

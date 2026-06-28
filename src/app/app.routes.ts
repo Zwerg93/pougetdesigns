@@ -6,8 +6,8 @@ export const routes: Routes = [
     loadComponent: () => import('./features/home/home.component').then(m => m.HomeComponent),
     data: {
       seo: {
-        title: 'Home',
-        description: 'Herzlich Willkommen bei Pouget Designs. Wir entwickeln Ihre performante Website mit modernsten Technologien.'
+        title: 'Web- & Printdesign, Fotografie',
+        description: 'Individuelle Designkonzepte aus Österreich. Ich gestalte hochwertige Printmedien (Speisekarten, Magazine) sowie moderne Webauftritte und fotografiere für Sie vor Ort.'
       }
     }
   },
@@ -16,8 +16,8 @@ export const routes: Routes = [
     loadComponent: () => import('./features/leistungen/leistungen.component').then(m => m.LeistungenComponent),
     data: {
       seo: {
-        title: 'Unsere Leistungen',
-        description: 'Von SEO-Optimierung über Webdesign bis zur Backend-Entwicklung bieten wir maßgeschneiderte Lösungen.'
+        title: 'Leistungen',
+        description: 'Mein Leistungsspektrum: Professionelles Webdesign, maßgeschneiderte Printmedien (Broschüren, Speisekarten), Branding, CI/CD, Social Media Content und Fotoshootings.'
       }
     }
   },
@@ -26,8 +26,8 @@ export const routes: Routes = [
     loadComponent: () => import('./features/portfolio/portfolio.component').then(m => m.PortfolioComponent),
     data: {
       seo: {
-        title: 'Portfolio & Referenzen',
-        description: 'Überzeugen Sie sich von unseren Projekten im Bereich Web-Applikationen und UI/UX Design.'
+        title: 'Portfolio',
+        description: 'Sehen Sie sich meine Erfolgsgeschichten an: Von der Omnichannel-Speisekarte für Makani bis hin zu R&D Projektberichten und edlen Harfenbau-Websites.'
       }
     }
   },
@@ -42,7 +42,7 @@ export const routes: Routes = [
     data: {
       seo: {
         title: 'Über Mich',
-        description: 'Erfahren Sie mehr über Marcel Pouget Designs und unsere Philosophie für digitale Produkte.'
+        description: 'Lernen Sie mich kennen. Als Designer und Fotograf verbinde ich kreative Ästhetik mit technischer Präzision für Ihren perfekten Markenauftritt.'
       }
     }
   },
@@ -52,7 +52,7 @@ export const routes: Routes = [
     data: {
       seo: {
         title: 'Impressum',
-        description: 'Rechtliche Informationen und Kontaktangaben zu Marcel Pouget Designs.'
+        description: 'Rechtliche Angaben, Anschrift und Kontaktinformationen von Marcel Pouget Designs.'
       }
     }
   },
@@ -61,8 +61,8 @@ export const routes: Routes = [
     loadComponent: () => import('./features/kontakt/kontakt.component').then(m => m.KontaktComponent),
     data: {
       seo: {
-        title: 'Kontakt aufnehmen',
-        description: 'Schreiben Sie uns oder rufen Sie uns an. Wir freuen uns auf Ihr Web-Projekt.'
+        title: 'Kontakt',
+        description: 'Haben Sie Fragen zu meinen Leistungen oder möchten Sie ein neues Print-, Web- oder Fotoprojekt anfragen? Ich freue mich auf Ihre Nachricht.'
       }
     }
   },

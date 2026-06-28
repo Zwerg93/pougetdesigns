@@ -9,7 +9,7 @@ export type ConsentStatus = 'pending' | 'granted' | 'denied';
 export class ConsentService {
   private platformId = inject(PLATFORM_ID);
   private readonly storageKey = 'cookie-consent-status';
-  private readonly gaTrackingId = 'G-XXXXXXXXXX'; // Replace with actual measurement ID
+  private readonly gaTrackingId = 'G-80SR9BJQ63';
 
   // Signal for global consent state
   consentStatus = signal<ConsentStatus>('pending');
